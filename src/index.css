@@ -1,5 +1,5 @@
 
-.sidebar {
+/* .sidebar {
   background-color: rgba(35, 55, 75, 0.9);
   color: blue;
   padding: 6px 12px;
@@ -8,9 +8,9 @@
   position: absolute;
   top: 0;
   left: 0;
-  margin: 12px;
+  margin: px;
   border-radius: 4px;
-}
+} */
 
 #map {
   position: absolute;
@@ -19,19 +19,27 @@
   width: 100%;
 }
 
-#instructions {
-  position: absolute;
-  margin: 20px;
-  width: 25%;
-  top: 0;
-  bottom: 20%;
-  padding: 20px;
-  background-color: #fff;
-  overflow-y: scroll;
-  font-family: sans-serif;
-}
+
 
 body {
   margin: 0;
   padding: 0;
+}
+
+@media only screen and (max-width: 500px) {
+  .directions-control {
+    max-width: 65% !important;
+    z-index: 1;
+    font: 5px/10px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    height: 50%;
+  }
+}
+.directions-control {
+  width: 100% !important;
+  z-index: 1;
+  font: 5px/10px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  height: 50%;
+}
+.directions-control-inputs {
+  display: none !important;
 }

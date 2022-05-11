@@ -1,6 +1,7 @@
 import {useEffect, useState } from 'react';
 import mapboxgl from 'mapbox-gl'; 
 import MapboxDirections from '@mapbox/mapbox-gl-directions/dist/mapbox-gl-directions'
+import './index.css'
 mapboxgl.accessToken = 'pk.eyJ1IjoiYWx3aWZocnoiLCJhIjoiY2wyZ3M0dmJ2MDZ3ZzNqdHBrdG9oMmNnZCJ9.gssBFqCcLMPL1kU3B6tq_A';
 
 const MapTest = () => {
