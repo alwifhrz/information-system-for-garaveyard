@@ -11,8 +11,8 @@ const data = [
       {
         id: "1",
         nama: "Makam 1",
-        latitude: "-7.6874038",
-        longitude: "110.4109642"
+        latitude: "-7.6874039",
+        longitude: "110.4109641"
         
       },
       {
