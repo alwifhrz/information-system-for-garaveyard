@@ -12,7 +12,7 @@ const MapTest = () => {
       longitude: null,
   })
 
-  // // userlocation lat dan lng
+  // userlocation lat dan lng
   const handleSetPosition = (position) => {
       setUserLocation({
           latitude: position.coords.latitude,

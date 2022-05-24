@@ -16,14 +16,24 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
 }
-
 
 
 body {
   margin: 0;
   padding: 0;
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-color: #295F2D;
+  /* background-image: url(logofix.jpg); */
+  background-position: center;
+  /* width: 100vw;
+  height: 100vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 500px) {
@@ -35,11 +45,123 @@ body {
   }
 }
 .directions-control {
-  width: 100% !important;
+  width: 65% !important;
   z-index: 1;
   font: 5px/10px 'Helvetica Neue', Arial, Helvetica, sans-serif;
   height: 50%;
 }
+
 .directions-control-inputs {
   display: none !important;
 }
+
+
+/* h1 maqbarah */
+h1 {
+  margin: auto;
+  width: 50%;
+  padding: 40px 40px 10px 40px;
+  text-align: center;
+  color: wheat;
+  font-size: larger;
+}
+
+/* h2 untuk sistem informasi */
+h2 {
+  color : yellow;
+  margin: auto;
+  width: 50%;
+  padding: 0px;
+  text-align: center;
+  font-size: medium;
+}
+
+/* #depan {
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+} */
+
+.logo {
+  padding: 0px;
+  margin: 0px;
+}
+
+.logo2 {
+  margin: 0px;
+  width: 100%;
+  padding: 0px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h4 {
+  padding: 0px;
+  margin: 0px;
+}
+.lokasi {
+  margin: auto;
+  width: 30%;
+  padding: 5px;
+  align-items: flex;
+  display: flex;
+  vertical-align: bottom;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  background: wheat;
+}
+
+a button:hover {
+  background-color: darkgoldenrod;
+}
+
+img {
+  margin: auto;
+  width: 50%;
+  padding: 0px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 img {
+  margin: auto;
+  width: 120%;
+  padding: 0px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.App {
+  margin: auto;
+  padding: 40px 40px 10px 40px;
+  text-align: center;
+  color: black;
+  width: 90vw;
+  height: 90vh;
+}
+
+/* untuk selector */
+.css-b62m3t-container {
+  margin: 10px;
+}
+
+/* untuk button di 'temukan' */
+.temukan {
+  margin: auto;
+  width: 30%;
+  padding: 5px;
+  align-items: flex;
+  display: flex;
+  vertical-align: bottom;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  background: wheat;
+}
+

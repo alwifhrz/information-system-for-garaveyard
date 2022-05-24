@@ -1,5 +1,7 @@
 import Select from "react-select";
 import { useState, useEffect } from "react";
+import pic from "./logofix.jpg";
+import { Link } from "react-router-dom"; 
 
 const data = [
   {
@@ -8,62 +10,62 @@ const data = [
     jenazah: [
       {
         id: "1",
-        nama: "Nusantara",
-        latitude: "-7.687403806",
+        nama: "Makam 1",
+        latitude: "-7.6874038",
         longitude: "110.4109642"
         
       },
       {
         id: "2",
-        nama: "Bali",
-        latitude: "-7.687386975",
+        nama: "Makam 2",
+        latitude: "-7.6873870",
         longitude: "110.4109711"
       },
       {
         id: "3",
-        nama: "Jogja",
+        nama: "Makam 3",
         latitude: "-7.687369533",
         longitude: "110.4109784"
       },
       {
         id: "4",
-        nama: "Semarang",
+        nama: "Makam 4",
         latitude: "-7.687354014",
         longitude: "110.4109865"
       },
       {
         id: "5",
-        nama: "Kendal",
+        nama: "Makam 5",
         latitude: "-7.687336775",
         longitude: "110.4109935"
       },
       {
         id: "6",
-        nama: "Solo",
+        nama: "Makam 6",
         latitude: "-7.687319522",
         longitude: "110.4110005"
       },
       {
         id: "7",
-        nama: "Jakarta",
+        nama: "Makam 7",
         latitude: "-7.687302144",
         longitude: "110.4110076"
       },
       {
         id: "8",
-        nama: "Padang",
+        nama: "Makam 8",
         latitude: "-7.687285947",
         longitude: "110.411015"
       },
       {
         id: "9",
-        nama: "Aceh",
+        nama: "Makam 9",
         latitude: "-7.687269408",
         longitude: "110.4110223"
       },
       {
         id: "10",
-        nama: "Magelang",
+        nama: "Makam 10",
         latitude: "-7.687252733",
         longitude: "110.4110302"
       }
@@ -76,19 +78,19 @@ const data = [
     jenazah: [
       {
         id: "11",
-        nama: "Banten",
+        nama: "Makam 11",
         latitude: "-7.768745872",
         longitude: "110.4011829"
       },
       {
         id: "12",
-        nama: "Ponorogo",
+        nama: "Makam 12",
         latitude: "-7.768735803",
         longitude: "110.4011952"
       },
       {
         id: "13",
-        nama: "Papua",
+        nama: "Makam 13",
         latitude: "-7.768749231",
         longitude: "110.4012025"
       }
@@ -143,27 +145,32 @@ export default function App() {
 
   return (
     <div className="App">
-    Nama Pemakaman
+    Nama Pemakaman :
       <Select
         options={MakamOptions}
         onChange={handleMakamChange}
         value={makam}
       />
-      {makam}
-      {makam && (
+      {makam} <br/><br/>
+      Nama Jenazah :
+      {makam && ( 
         
-        <Select
+        <Select 
           options={dataJenazah}
           onChange={handleJenazahChange}
           value={jenazah}
         />
       )}
       {jenazah}
-      <a href={`/map?latitude=${latitude}&longitude=${longitude}`}>
-        <button >
+      <br/><br/>
+      <Link to={`/map?latitude=${latitude}&longitude=${longitude}`}>
+        <button class="temukan">
             Temukan
         </button>
-    </a>
+    </Link>
+    <h1 class="logo2">
+      <img src={pic}/>
+    </h1>
     </div>
   );
 }
