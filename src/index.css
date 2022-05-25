@@ -1,17 +1,4 @@
 
-/* .sidebar {
-  background-color: rgba(35, 55, 75, 0.9);
-  color: blue;
-  padding: 6px 12px;
-  font-family: monospace;
-  z-index: 1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: px;
-  border-radius: 4px;
-} */
-
 #map {
   position: absolute;
   top: 0px;
@@ -142,7 +129,7 @@ h1 img {
   margin: auto;
   padding: 40px 40px 10px 40px;
   text-align: center;
-  color: black;
+  color: #cf985d;
   width: 90vw;
   height: 90vh;
 }
@@ -150,6 +137,7 @@ h1 img {
 /* untuk selector */
 .css-b62m3t-container {
   margin: 10px;
+  background: blue;
 }
 
 /* untuk button di 'temukan' */
