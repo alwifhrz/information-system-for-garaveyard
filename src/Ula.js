@@ -1,5 +1,5 @@
 import React from 'react';
-import pic from "./logofix.jpg";
+import pic from "./logofix.png";
 import { Link } from "react-router-dom"; 
 
 const Ula=()=> {
@@ -7,7 +7,7 @@ const Ula=()=> {
       <>
   <div id="awal">
     <h1> MAQBARAH </h1>
-    <h2>Sistem Informasi dan Navigasi Makam</h2>
+    <h2>Sistem Informasi Posisi dan Navigasi Makam</h2>
     <h3 class="logo">
       <img src={pic}/>
     </h3>

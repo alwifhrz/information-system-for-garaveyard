@@ -1,6 +1,6 @@
 import Select from "react-select";
 import { useState, useEffect } from "react";
-import pic from "./logofix.jpg";
+import pic from "./logofix.png";
 import { Link } from "react-router-dom"; 
 
 const data = [
@@ -132,7 +132,7 @@ export default function App() {
       });
       setDataJenazah(jenazahOptions);
     }
-  }, [makam]);
+  }, [makam]);  //dependency array kapan blok dalam use effect dipanggil ketika makam berubah
 
   useEffect(() => {
     if (makam && jenazah) {
@@ -160,10 +160,11 @@ export default function App() {
           onChange={handleJenazahChange}
           value={jenazah}
         />
+
       )}
       {jenazah}
       <br/><br/>
-      <Link to={`/map?latitude=${latitude}&longitude=${longitude}`}>
+      <Link to={`/map?latitude=${latitude}&longitude=${longitude}`}> 
         <button class="temukan">
             Temukan
         </button>

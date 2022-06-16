@@ -27,6 +27,7 @@ const MapTest = () => {
       setLongitude(queryParams.get("longitude"))
   },[])
 
+//melakukan sesuatu dengan lat dan long yg sudah diambil
   useEffect(() => {
       if (navigator.geolocation) {
           navigator.geolocation.getCurrentPosition(handleSetPosition)
@@ -47,7 +48,7 @@ const MapTest = () => {
             unit: 'metric',
             profile: 'mapbox/walking',
             container : 'directions',
-            alternatives: 'false',
+            alternatives: 'true',
         });
 
         map.on('load', function() {
